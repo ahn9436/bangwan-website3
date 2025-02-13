@@ -102,7 +102,6 @@ strong {
     align-self: start;
 
     animation: fadeInLeft 2s;
-    animation-delay: 1s;
 }
 
 .grid-paragraph {
@@ -110,7 +109,6 @@ strong {
     font-weight: 400;
 
     animation: fadeInLeft 2.2s;
-    animation-delay: 1s;
 }
 
 
