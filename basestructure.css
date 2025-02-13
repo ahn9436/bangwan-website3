@@ -35,7 +35,12 @@ a {
 #navbutton {
     display: flex;
     font-weight: 500;
-    text-decoration: underline;
+}
+
+#navbutton:hover {
+    background-color: rgb(230, 215, 215);
+    border-radius: 6%;
+    transition: all 1s;
 }
 
 #logo-image {
@@ -134,24 +139,32 @@ a {
 
 /* Tablet Responsive Design */
 
-@media (max-width: 768px) {
+@media (max-width: 1369px) {
     .top-menu {
-        height: 55px;
+        height: 70px;
     }
 
     .menubutton-container {
         width: 100vw;
+        height: 50px;   
         margin: 0;
         gap: 40px;
         background-color: rgb(235, 221, 221);
     }
+
+    #logo-image {
+        height: 65%;
+        margin: 10px 5px 10px 40px;
+    }
+
     #header1 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
    
     #header2 {
         font-size: 0.7rem;
     }
+    
 }
 
 @media (max-width: 750px) {
@@ -163,7 +176,6 @@ a {
     .menubutton-container {
         justify-content: center;
         margin: 0;
-
         width: 100vw;
         height: 40px;
         background-color: rgb(235, 233, 233);

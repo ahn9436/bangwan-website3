@@ -35,7 +35,7 @@
 
 #welcome-text {
     color: white;
-    font-size: 20pt;
+    font-size: 22pt;
     z-index: 1;
 }
 #bangwan-text {
@@ -46,7 +46,7 @@
 
 #experience-text {
     color: white;
-    font-size: 15pt;
+    font-size: 17pt;
     z-index: 1;
 }
 
@@ -298,11 +298,15 @@ footer.footer {
 
 /* Tablet Responsive Design */
 
-@media (max-width: 768px) {
+@media (max-width: 1369px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    
+    .carousel {
+        width: 85%;
     }
 
     .footer-left,
