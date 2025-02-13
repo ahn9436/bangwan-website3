@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bangwan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-style2.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Downloading Menu Zone -->
+    <!-- <div class="downloadElement">
+        <img src="images/logo.png" alt="Logo of bangwan shape like a house" class="logo-imageLoader">
+        <span style="font-size: 22; font-weight: 550;">ชุมชนบางวัน</span>
+        <div class="blockingBlock">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div> -->
+
+    <!-- Top menu -->
+    <nav>
+        <div class="top-menu">
+            <img src="images/logo.png" alt="Logo of bangwan shape like a house" id="logo-image">
+            <div>
+                <header id="header1">บ้านคุรอด</header>
+                <header id="header2">จังหวัดพังงา</header>
+            </div>
+            <div class="menubutton-container">
+                <a href="" id="navbutton">หน้าหลัก</a>
+                <label id="navbutton">Hello</label>
+                <label id="navbutton">Bonjour</label>   
+                <label id="navbutton">Hej</label>
+                <a href="information/information.html" id="navbutton">ประวัติ</a>
+            </div>
+        </div>    
+    </nav>
+    <div class="backgrond-container">
+        <!-- background -->
+        <div class="top-image">
+            <img src="images/Index-background.jpg" alt="Image of a river in village">
+        </div>
+        <div class="background-text-container">
+            <label for="" id="welcome-text">ยินดีต้อนรับ</label>
+            <label for="" id="bangwan-text">บ้านคุรอด จังหวัดพังงา</label>
+            <label for="" id="experience-text">เราพร้อมจะสร้างประสบการณ์ท่องเที่ยวที่ดีที่สุดให้กับคุณ</label>
+        </div>
+    </div>
+
+    <div class="vdotext-container">
+            <strong class="Vdotext">วีดีโอของพวกเรา</strong>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel-items">
+            <iframe src="https://www.youtube.com/embed/ly36kn0ug4k?si=1aj1aoEg93EC6gTr" class="carousel-item"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe src="https://www.youtube.com/embed/PuGbGzu5ZmQ?si=jSJbtHmIl44q8sbm" class="carousel-item"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe src="https://www.youtube.com/embed/5OMAiYDV1Ss?si=UrfDo9oz8mRI8CP5" class="carousel-item"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <button class="arrow prev">&#10094;</button>
+        <button class="arrow next">&#10095;</button>
+    </div>
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="traveltext-container">
+        <strong class="traveltext">ที่น่าเทียว</strong>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <a href="destination/C-res.html" class="content-item">
+            <img src="images/C-res-top.png" alt="image of chinese restuarant" data-description="this is about chineses restuarant">
+            <div>
+                <strong>ร้านขนมจีนพานเต</strong>
+                <p>"In the tapestry of achievement, each thread of perseverance weaves a masterpiece; 
+                    let your determination be the loom that shapes your destiny."</p>
+            </div>
+        </a>
+        <a href="destination/sea.html" class="content-item">
+            <img src="images/top-sea.png" alt="image of waterfall" data-description="Full details of Image 2.">
+            <div>
+                <strong>เที่ยวทะเลพังงา</strong>
+                <p>a place where you can unleash your power of swimming upon waves with stories</p>
+            </div>
+        </a>
+        <a href="destination/waterfall.html" class="content-item">
+            <img src="images/Index-background.jpg" alt="image of waterfall" data-description="Full details of Image 3.">
+            <div>
+                <strong>น้ำตกตำหนัง</strong>
+                <p>สำรวจสภาพเวดลอมอุดมสมบูรกับพื้นที่นํ้าตกตำหนัง</p>
+            </div>
+        </a>    
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left Side: Contact Info -->
+            <div class="footer-left">
+                <h3>ติดต่อเราได้ที่</h3>
+                <p><strong>เบอร์โทรศัพท์ :</strong> 02-123-4567</p>
+                <p><strong>เบอร์โทรศัพท์ :</strong> 08-999-999</p><br>
+                <p><strong>Line:</strong> abcdefg</p>
+            </div>
+
+            <!-- Right Side: Social Media Links -->
+            <div class="footer-right">
+                <h3>ติดตามเราได้ที่</h3>
+                <div class="social-media">
+                    <!-- Facebook -->
+                    <div class="social-media-item">
+                        <img src="images/facebook-icon.png" alt="Facebook">
+                        <span>Facebook</span>
+                    </div>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/bankurodd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <div class="social-media-item">
+                            <img src="images/instagram-icon.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </div>
+                    </a>
+                    <!-- TikTok -->
+                    <div class="social-media-item">
+                        <img src="images/tiktok-icon.png" alt="TikTok">
+                        <span>TikTok</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- JavaScript -->
+<script>
+    // Carousel Logic
+    const carouselItems = document.querySelector('.carousel-items');
+    const carouselDots = document.querySelectorAll('.dot');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        carouselItems.style.transform = `translateX(-${currentIndex * 100}%)`;
+        carouselDots.forEach(dot => dot.classList.remove('active'));
+        carouselDots[currentIndex].classList.add('active');
+    }
+
+    function showNext() {
+        currentIndex = (currentIndex + 1) % carouselDots.length;
+        updateCarousel();
+    }
+
+    function showPrev() {
+        currentIndex = (currentIndex - 1 + carouselDots.length) % carouselDots.length;
+        updateCarousel();
+    }
+
+    nextButton.addEventListener('click', showNext);
+    prevButton.addEventListener('click', showPrev);
+
+    carouselDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
+
+    setInterval(showNext, 7000);
+
+    // Modal Logic
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalDescription = document.getElementById('modal-description');
+    const contentImages = document.querySelectorAll('.content-item img');
+    const close = document.getElementById('close');
+
+    close.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', event => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>

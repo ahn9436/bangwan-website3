@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .image1 {
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            animation: appear 2s ease-in-out;
+            margin: 50px;
+        }
+
+        .image2 {
+            display: inline;
+            justify-self: end;
+            width: 500px;
+            height: 400px;
+            background-color: blue;
+            animation: appear2 2s ease-in-out;
+            margin: 50px;
+        }
+
+        @keyframes appear2 {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Animation Test</h1>
+    <div class="image1">
+    </div>
+    <div>
+        <label for="image1" id="text1">The blue parrot drove by the hitchhiking mongoose.
+            He quietly entered the museum as the super bowl started.
+            If you spin around three times, you'll start to feel melancholy.
+            There were a lot of paintings of monkeys waving bamboo sticks in the gallery.
+            After coating myself in vegetable oil I found my success rate skyrocketed 1</label>
+    </div>
+    <div class="image2">
+
+    </div>
+    <div>
+        <label for="image2" id="text2">There were three sphered rocks congregating in a cubed room.
+            It was a slippery slope and he was willing to slide all the way to the deepest depths.
+            He was an introvert that extroverts seemed to love.
+            She lived on Monkey Jungle Road and that seemed to explain all of her strangeness.
+            A suit of armor provides excellent sun protection on hot days.</label>
+    </div>
+</body>
+</html>

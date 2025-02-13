@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen with Dots</title>
+    <style>
+        /* Global styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #3f87a6, #ebf8e1);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Loading container */
+        .loading-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Dot styles */
+        .dot {
+            width: 20px;
+            height: 20px;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            opacity: 0.2;
+            transform: scale(0.8);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Welcome text style */
+        #welcomeText {
+            position: absolute;
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            /* -webkit-background-clip: text; */     
+            display: none; /* Initially hidden */
+            pointer-events: none; /* Disable text selection */
+        }
+    </style>
+</head>
+<body>
+<div class="loading-screen" id="loadingScreen">
+    <!-- Dots created dynamically -->
+</div>
+<div id="welcomeText">Welcome</div>
+
+<script>
+    // Create dots dynamically and append them to the screen
+    const loadingScreen = document.getElementById("loadingScreen");
+    const dotColors = [
+        "linear-gradient(135deg, #ff9a9e, #fad0c4)",
+        "linear-gradient(135deg, #fad0c4, #a1c4fd)",
+        "linear-gradient(135deg, #a1c4fd, #c2e9fb)",
+        "linear-gradient(135deg, #c2e9fb, #b6a6ff)",
+        "linear-gradient(135deg, #b6a6ff, #fbc2eb)"
+    ];
+
+    for (let i = 0; i < 5; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        dot.style.background = dotColors[i]; // Assign gradient color
+        dot.style.borderColor = dotColors[i]; // Assign border color
+        loadingScreen.appendChild(dot);
+    }
+
+    // Animate dots sequentially using JavaScript
+    const dots = document.querySelectorAll(".dot");
+    let currentIndex = 0;
+
+    function animateDots() {
+        // Reset all dots
+        dots.forEach((dot) => {
+            dot.style.opacity = "0.2";
+            dot.style.transform = "scale(0.8)";
+        });
+
+        // Highlight the current dot
+        dots[currentIndex].style.opacity = "1";
+        dots[currentIndex].style.transform = "scale(1.2)";
+
+        // Move to the next dot
+        currentIndex = (currentIndex + 1) % dots.length;
+    }
+
+    // Start the animation
+    const interval = setInterval(animateDots, 300);
+
+    // Hide the loading screen and show the "Welcome" text after time
+    setTimeout(() => {
+        clearInterval(interval); // Stop the animation
+        loadingScreen.style.display = 'none'; // Hide the loading screen
+        const welcomeText = document.getElementById("welcomeText");
+        welcomeText.style.display = 'block'; // Show the welcome text
+
+        // Set the initial position of the "Welcome" text
+        let welcomeTextElement = document.getElementById("welcomeText");
+
+        // Function to generate random positions
+        const generateRandomPosition = () => {
+            return {
+                x: Math.random() * (window.innerWidth - welcomeTextElement.offsetWidth),
+                y: Math.random() * (window.innerHeight - welcomeTextElement.offsetHeight)
+            };
+        };
+
+        let targetPosition = generateRandomPosition();
+        let currentPosition = { x: 0, y: 0 };
+        let speed = 0.05; // Speed of movement
+
+        // Smooth animation loop
+        function moveText() {
+            // Calculate the difference in position
+            let dx = targetPosition.x - currentPosition.x;
+            let dy = targetPosition.y - currentPosition.y;
+
+            // Move the "Welcome" text towards the target position
+            currentPosition.x += dx * speed;
+            currentPosition.y += dy * speed;
+
+            // Apply the new position
+            welcomeTextElement.style.left = `${currentPosition.x}px`;
+            welcomeTextElement.style.top = `${currentPosition.y}px`;
+
+            // If the "Welcome" text has reached the target position, set a new target position
+            if (Math.abs(dx) < 1 && Math.abs(dy) < 1) {
+                targetPosition = generateRandomPosition();
+            }
+
+            // Continue the animation
+            requestAnimationFrame(moveText);
+        }
+
+        // Start the animation
+        moveText();
+    }, 5000); // Start after 5 seconds
+</script>
+</body>
+</html>

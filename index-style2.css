@@ -1,0 +1,381 @@
+@import url(basestructure.css);
+
+/*background image and text container */
+.backgrond-container {
+    display: flex;
+    width: 100%;
+    max-height: 725px;
+    padding: 30px 0 0 0;
+    background-color: #333;
+}
+
+/* Top Image Section */
+.top-image {
+    overflow: hidden;
+}
+
+.top-image img {
+    width: 100%;
+    min-width: 440px;
+    height: auto;
+    display: block;
+    z-index: -1;
+}
+
+/* text for background zone */
+.background-text-container {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    margin: min(75px) 0 0 3%;
+    z-index: 8;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#welcome-text {
+    color: white;
+    font-size: 20pt;
+    z-index: 1;
+}
+#bangwan-text {
+    color: white;
+    font-size: 33pt;
+    z-index: 1;
+}
+
+#experience-text {
+    color: white;
+    font-size: 15pt;
+    z-index: 1;
+}
+
+.vdotext-container,.traveltext-container {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Vdotext,.traveltext {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 33vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+    z-index: 7;
+}
+
+.next {
+    right: 10px;
+    z-index: 7;
+}
+
+.dots {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Content Container */
+.content-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.content-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-item:hover img {
+    border-color: #fffdfd8b;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.content-item div {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+
+/* Popup Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    text-align: center;
+    color: white;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.modal img {
+    max-width: 100%;
+    max-height: 60vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.modal p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer.footer {
+    background: linear-gradient(90deg, #4caf50, #2196f3);
+    color: #ffffff;
+    padding: 30px;
+    border-top: 5px solid #333;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+}
+
+.footer-left h3,
+.footer-right h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-left p,
+.footer-right p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-media-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.social-media-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.social-media-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Animation Zone */
+
+/* Tablet Responsive Design */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin: 20px 0;
+    }
+
+    /* background text zone */
+    #welcome-text {
+        color: white;
+        font-size: 15pt;
+        font-weight: lighter;
+    }
+    #bangwan-text {
+        color: white;
+        font-size: 21pt;
+    }
+    
+    #experience-text {
+        color: white;
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .background-text-container {
+        gap: 7px;
+    }
+
+    #welcome-text {
+        color: white;
+        font-size: 13pt;
+        font-weight: lighter;
+    }
+    
+    #bangwan-text {
+        color: white;
+        font-size: 18pt;
+    }
+    
+    #experience-text {
+        color: white;
+        font-size: 10pt;
+    }
+
+    .vdotext-container {
+        height: 55px;
+        padding-top: 25px;
+    }
+
+    .traveltext-container {
+        height: 45px;
+        padding-top: 35px;
+    }
+
+    .Vdotext,.traveltext {
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    .carousel {
+        width: 87%;
+    }
+
+    .carousel-item {
+        height: 250px;
+    }
+    
+    .content-item img {
+        width: 110px;
+        height: 110px;
+    }
+    
+}
+
