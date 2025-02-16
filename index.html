@@ -34,10 +34,9 @@
                 <header id="header2">จังหวัดพังงา</header>
             </div>
             <div class="menubutton-container">
-                <a href="" id="navbutton">หน้าหลัก</a>
+                <a href="" id="navbutton">หน้าหลัก</a> 
                 <label id="navbutton">Hello</label>
-                <label id="navbutton">Bonjour</label>   
-                <label id="navbutton">Hej</label>
+                <label id="navbutton">Bonjour</label>
                 <a href="information/information.html" id="navbutton">ประวัติ</a>
             </div>
         </div>    
@@ -45,7 +44,9 @@
     <div class="backgrond-container">
         <!-- background -->
         <div class="top-image">
-            <img src="images/Index-background.jpg" alt="Image of a river in village">
+            <video alt="video showcase bangwan atmosphere" autoplay muted loop>
+                <source src="images/Index-background.mp4" type="video/mp4">
+            </video>
         </div>
         <div class="background-text-container">
             <label for="" id="welcome-text">ยินดีต้อนรับ</label>
@@ -55,65 +56,128 @@
     </div>
 
     <div class="vdotext-container">
-            <strong class="Vdotext">วีดีโอของพวกเรา</strong>
+            <strong class="Vdotext">แนะนำ</strong>
     </div>
 
     <!-- Carousel -->
+    <div class="dots">
+        <div style="display: inline-block">
+            <label class="dot-text" for="dot2">น้ำตกตำหนัง</label>
+            <button class="dot active" id="dot2"></buttonS>
+        </div>
+        <div style="display: inline-block;">
+            <label class="dot-text" for="dot">เที่ยวทะเลพังงา</label>
+            <button class="dot" id="dot"></div>
+        </div>
+    </div>
     <div class="carousel">
         <div class="carousel-items">
-            <iframe src="https://www.youtube.com/embed/ly36kn0ug4k?si=1aj1aoEg93EC6gTr" class="carousel-item"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-
-            <iframe src="https://www.youtube.com/embed/PuGbGzu5ZmQ?si=jSJbtHmIl44q8sbm" class="carousel-item"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-
-            <iframe src="https://www.youtube.com/embed/5OMAiYDV1Ss?si=UrfDo9oz8mRI8CP5" class="carousel-item"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+            <div class="carousel-item" id="carousel-item1">
+                <strong class="carousel-text">น้ำตกตำหนัง</strong>
+                <label class="carousel-label">เป็นน้ำตกขนาดใหญ่ที่ตั้งอยู่ภายในอุทยานแห่งชาติศรีพังงา </label>
+                <a href="destination/waterfall.html" class="carousel-button-container">
+                    <button class="carousel-button">
+                        อ่านเพิ่มเติม
+                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                          <path
+                            clip-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                    </button>
+                </a>
+            </div>
+            <div class="carousel-item" id="carousel-item2">
+                <strong class="carousel-text">เที่ยวทะเลพังงา</strong>
+                <label class="carousel-label">ดำน้ำชมปาการังและนั่งเรือผ่านป่าชายเลนขนาดใหญ่</label>
+                <a href="destination/sea.html" class="carousel-button-container">
+                    <button class="carousel-button">
+                        อ่านเพิ่มเติม
+                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                          <path
+                            clip-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                    </button>
+                </a>
+            </div>
         </div>
         <button class="arrow prev">&#10094;</button>
         <button class="arrow next">&#10095;</button>
     </div>
-    <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
 
     <div class="traveltext-container">
-        <strong class="traveltext">ที่น่าเทียว</strong>
+        <strong class="traveltext">ที่น่าเที่ยว</strong>
     </div>
 
     <!-- Content Container -->
-    <div class="content-container">
-        <a href="destination/C-res.html" class="content-item">
-            <img src="images/C-res-top.png" alt="image of chinese restuarant" data-description="this is about chineses restuarant">
-            <div>
-                <strong>ร้านขนมจีนพานเต</strong>
-                <p>"In the tapestry of achievement, each thread of perseverance weaves a masterpiece; 
-                    let your determination be the loom that shapes your destiny."</p>
+     <div class="content-grid">
+        <div class="content-grid-item">
+            <div class="content-grid-img-container">
+                <img src="images/bird.png" alt="Image of bird" id="bird-image">
             </div>
-        </a>
-        <a href="destination/sea.html" class="content-item">
-            <img src="images/top-sea.png" alt="image of waterfall" data-description="Full details of Image 2.">
-            <div>
-                <strong>เที่ยวทะเลพังงา</strong>
-                <p>a place where you can unleash your power of swimming upon waves with stories</p>
+            <strong class="content-grid-item-header">สวนนกบางวัน</strong>
+            <p class="grid-item-text">ความจริงแล้วที่นี้ไม่ใช่สวนนกตั้งแต่แรก
+                แต่ลุงวัฒน์ เจ้าของสวน เป็นคนชื่นชอบในการหาต้นไม้พันธ์ต่าง ๆ มาปลูก
+                ที่สวนของตน แล้วลุงวัฒน์ได้สังเกตุเห็นว่า
+                ในช่วงเช้าและเย็นของทุก ๆ วันจะมีนกน้อยหลาย
+                พันธ์ลงมาจากภูเขาเพื่อมากินน้ำและผลไม้ที่ลุงปลูก
+                เป็นจำนวนมาก ทำใหลุงได้เริ่มเปิดสวนเพื่อให้
+                นักท่องเที่ยว นักศึกษา หรือนักถ่ายภาพมาที่สวน
+                ของคุณลุงเพื่อมาชนสวน และชมนกนั้นเอง</p>
+        </div>
+        
+        <div class="content-grid-item">
+            <div class="content-grid-img-container">
+                <img src="images/C-resimage2.png" alt="image of chinese restuarant" id="C-res-image">
             </div>
-        </a>
-        <a href="destination/waterfall.html" class="content-item">
-            <img src="images/Index-background.jpg" alt="image of waterfall" data-description="Full details of Image 3.">
-            <div>
-                <strong>น้ำตกตำหนัง</strong>
-                <p>สำรวจสภาพเวดลอมอุดมสมบูรกับพื้นที่นํ้าตกตำหนัง</p>
+            <strong class="content-grid-item-header">ร้านขนมจีนพานเต</strong>
+            <p class="grid-item-text">ร้านอาหารจีนแห่งนี้ เป็นร้านลับ ๆ แต่ถ้าคุณได้มา
+                สักครั้งคุณจะติดใจ เพราะที่ตั้งร้านอยู่ติดกับลำธาร
+                ที่มีน้ำไหลผ่านตลอดเวลา ที่ให้สามารถมาเพื่อถ่ายรูป
+                พร้อมทานขนมจีนอร่อย ๆ แบบบุฟเฟย์ ราคาไม่ถึง
+                ร้อย และยังมีอาหารจานเดียวให้เลือกอีกหลากหลาย
+                และนอกจากนี้คุณยังสามารถนำขนมจีนไปทาน
+                ในลำธารได้อีกด้วย ทำให้คุณจะได้รับประสบการณ์
+                การทานขนมจีนที่หาไม่ได้จากที่ไหนแน่นอน</p>
+        </div>
+
+        <div class="content-grid-item">
+            <div class="content-grid-img-container">
+                <img src="images/Market.jpg" alt="Image of market food" id="market-image">
             </div>
-        </a>    
-    </div>
+            <strong class="content-grid-item-header">ตลาดเช้าครุรอด</strong>
+            <p class="grid-item-text">ตลาดแห่งนี้ ถึงเป็นตลดที่คนคุระบุรีทุกคนน่าจะรู้จักดี
+                เพราะถึงแม้ตัวตลาดจะไม่ได้มีขนาดที่ใหญ่มาก
+                แต่ด้านในอัดแน่นไปด้วยของอร่อยมากมาย โดยเฉพาะ
+                ในตอนเช้าของทุกวัน จะมีร้านโจ๊กปลาเจ้าเด็ดที่หาก
+                คุณไปสายแม้แต่นิดเดียวคุณจะอดทานแน่นอน
+                แต่ที่นี้ก็ไม่ได้มีดีแค่โจ๊กปลาอย่างเดียว ร้านหมูปิ้ง
+                ปาท่องโก๋ หรือกาแฟโบราณเองก็ไม่ใช่เล่น
+                และหากคุณไปในบางวันที่เข้ามีการจัดตลาดนัดกัน
+                รับรองว่าคุณจะติดใจเลยละ</p>
+        </div>
+
+        <div class="content-grid-item">
+            <div class="content-grid-img-container">
+                <img src="images/homestay.png" alt="Image of market food" id="market-image">
+            </div>
+            <strong class="content-grid-item-header">บางครั่งโฮมสเตย์</strong>
+            <p class="grid-item-text">หากคุณมาเที่ยวพังงาแล้วอยากได้ที่พักนอนสบายๆ
+                พร้อมกับบรรยากาศริมป่าชายเลนสวยๆ แล้วละก็
+                ที่นี้จะเป็นคำตอบให้กับคุณแน่นอน และนอกจากที่พัก
+                จะดีแล้ว คุณยังสามารถบอกพนักงานที่พัก ให้พาไป
+                รับประทานอาหารในร้านที่ลับมากๆ ในป่าชายเลน
+                โดยคุณจะได้นั่งเรือชมบรรยากาศ และไปยังร้านอาหาร
+                ที่อยู่บนแพ โดยที่ร้านจะมีของเด็ดอย่าง “ปูนิ่ม”
+                ในราคาที่จับต้องได้ และมีปลาทะเลสดๆ ที่มาจากทะเล
+                ทุกๆวัน หากคุณได้ได้สัมผัสกับประสบการณ์ที่กล่าวมา
+                ขอเชิญให้ท่านมาพักผ่อนกายและใจที่นี้ได้เลย</p>
+        </div>
+     </div>
 
     <!-- Modal -->
     <div class="modal" id="modal">
@@ -140,22 +204,26 @@
                 <h3>ติดตามเราได้ที่</h3>
                 <div class="social-media">
                     <!-- Facebook -->
-                    <div class="social-media-item">
-                        <img src="images/facebook-icon.png" alt="Facebook">
-                        <span>Facebook</span>
-                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61572966750831">
+                        <div class="social-media-item">
+                            <img src="images/contact-logo.jpg" alt="Facebook">
+                            <span>Facebook</span>
+                        </div>
+                    </a>
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/bankurodd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                         <div class="social-media-item">
-                            <img src="images/instagram-icon.png" alt="Instagram">
+                            <img src="images/contact-logo.jpg" alt="Instagram">
                             <span>Instagram</span>
                         </div>
                     </a>
                     <!-- TikTok -->
-                    <div class="social-media-item">
-                        <img src="images/tiktok-icon.png" alt="TikTok">
-                        <span>TikTok</span>
-                    </div>
+                    <a href="https://www.tiktok.com/@bankurod?is_from_webapp=1&sender_device=pc">
+                        <div class="social-media-item">
+                            <img src="images/contact-logo.jpg" alt="Tiktok">
+                            <span>TikTok</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -195,7 +263,6 @@
         });
     });
 
-    setInterval(showNext, 7000);
 
     // Modal Logic
     const modal = document.getElementById('modal');

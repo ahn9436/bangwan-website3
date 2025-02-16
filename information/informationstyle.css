@@ -73,7 +73,6 @@ strong {
     height: 100%;
     min-height: 420px;
     animation: fadeIn 2.5s;
-    animation-delay: 1s;
 }
 
 .grid-header {
@@ -82,14 +81,12 @@ strong {
     align-self: start;
 
     animation: fadeInLeft 2s;
-    animation-delay: 1s;
 }
 
 .grid-paragraph {
     font-size: 0.9rem;
     font-weight: 400;
     animation: fadeInLeft 2.2s;
-    animation-delay: 1s;
 }
 
 
