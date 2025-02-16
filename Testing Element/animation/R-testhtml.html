@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Element</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            
+        }
+        .animation-test {
+            width: 100vw;
+            height: 100vh;
+        }
+        .right, .left {
+            width: 50%;
+            height: 100%;
+        }
+
+        .right {
+            background-color: red;
+            float: right;
+            animation: appear 1s ease-in-out;
+        }
+
+        .left {
+            background-color: blue;
+            float: left;
+            animation: appear2 1s ease-in-out;
+        }
+
+        @keyframes appear {
+            0% {
+                transform: translateY(-1000px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes appear2 {
+            0% {
+                transform: translateY(1000px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-test">
+        <div class="right"></div>
+        <div class="left"></div>
+    </div>
+</body>
+</html>
