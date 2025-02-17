@@ -128,11 +128,11 @@
     padding-block: 1rem;
     padding-inline: 1.75rem;
     background-color: transparent;
-    border-radius: 9999px;
+    border-radius: 8000px;
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-self: end;
+    justify-self: flex-end;
     cursor: pointer;
     color: #ffff;
     gap: 10px;
@@ -141,7 +141,7 @@
     outline: none;
     overflow: hidden;
     font-size: 17px;
-    margin: 15% 8% 0 200px;
+    margin: 15% 8% 0 0;
 }
   
 .icon {
