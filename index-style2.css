@@ -464,7 +464,7 @@ footer.footer {
     .carousel-button {
         padding-block: 0.8rem;
         padding-inline: 1.50rem;
-        margin: 0 auto;
+        margin: 14% auto 0 auto;
     }
 
     .content-grid-item-header {
