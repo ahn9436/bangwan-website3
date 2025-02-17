@@ -130,8 +130,6 @@
     background-color: transparent;
     border-radius: 8000px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     justify-self: flex-end;
     cursor: pointer;
     color: #ffff;
@@ -141,7 +139,7 @@
     outline: none;
     overflow: hidden;
     font-size: 17px;
-    margin: 15% 8% 0 0;
+    margin: 13% 8% 0 0;
 }
   
 .icon {
@@ -448,6 +446,11 @@ footer.footer {
         font-size: 1.2rem;
     }
     
+    .content-grid {
+        gap: 30px;
+        margin: 15px 5vw 90px 5vw;
+    }
+
     .carousel-text {
         font-size: 3.0rem;
         font-weight: 400;
