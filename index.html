@@ -25,6 +25,18 @@
         </div>
     </div> -->
 
+    <!-- Language Select Menu -->
+    <div class="language">
+        <div class="languageUis">
+            <strong class="language-text">โปรดเลือกภาษา</strong>
+            <strong class="language-text">Please Choose a Language</strong>
+            <div class="languagebuttonContainer">
+                <button type="button" class="languagebutton" id="thaiButton" onclick="">ไทย</button>
+                <a href="/EN/index.html" class="languagebutton">English</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Top menu -->
     <nav>
         <div class="top-menu">
@@ -235,7 +247,13 @@
     const carouselDots = document.querySelectorAll('.dot');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
+    const thaiButton = document.getElementById('thaiButton');
+    const languageContainer = document.querySelector('.language');
     let currentIndex = 0;
+
+    thaiButton.addEventListener('click', () => {
+        languageContainer.style.display = 'none';
+    });
 
     function updateCarousel() {
         carouselItems.style.transform = `translateX(-${currentIndex * 100}%)`;
