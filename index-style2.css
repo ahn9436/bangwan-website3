@@ -318,49 +318,6 @@
     background-color: black;
 }
 
-/* Content Container Grid */
-.content-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 575px;
-    gap: 50px;
-    margin: 15px 9vw 90px 9vw;
-}
-
-.content-grid-item {
-    justify-self: center;
-    align-self: center;
-    justify-items: center;
-    height: 100%;
-    width: 100%;
-    border-bottom: 1px black solid;
-}
-
-.content-grid-item-header {
-    font-size: 1.3rem;
-}
-
-.grid-item-text {
-    font-size: 1rem;
-    margin: 20px;
-    color: black;
-    opacity: 1;
-}
-
-.content-grid-img-container {
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-
-.content-grid-img-container img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    justify-self: center;
-}
-
 
 /* Popup Modal */
 .modal {
@@ -508,11 +465,6 @@ footer.footer {
     .dot-text {
         font-size: 1.2rem;
     }
-    
-    .content-grid {
-        gap: 30px;
-        margin: 15px 5vw 90px 5vw;
-    }
 
     .carousel-text {
         font-size: 3.0rem;
@@ -528,24 +480,6 @@ footer.footer {
         padding-block: 0.8rem;
         padding-inline: 1.50rem;
         margin: 14% auto 0 auto;
-    }
-
-    .content-grid-item-header {
-        font-size: 1.1rem;
-    }
-    
-    .grid-item-text { 
-        font-size: 0.8rem;
-        margin: 14px;
-    }
-    
-    .content-grid-img-container {
-        margin-bottom: 10px;
-    }
-    
-    .content-grid-img-container img {
-        width: 100%;
-        min-height: 320px;
     }
 }
 
@@ -627,30 +561,5 @@ footer.footer {
         padding-inline: 1.25rem;
         margin: 30% auto 0 auto;
         font-size: 14px;
-    }
-
-    .content-grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 460px;
-        gap: 30px;
-        margin: 13px 5vw 70px 5vw;
-    }
-
-    .content-grid-item-header {
-        font-size: 1rem;
-    }
-    
-    .grid-item-text {
-        font-size: 0.8rem;
-        margin: 10px;
-    }
-    
-    .content-grid-img-container {
-        margin-bottom: 15px;
-    }
-    
-    .content-grid-img-container img {
-        width: 100%;
-        min-height: 320px;
     }
 }
