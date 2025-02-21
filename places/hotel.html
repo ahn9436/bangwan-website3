@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ที่พัก</title>
+    <link rel="stylesheet" href="places-style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="top-menu">
+            <img src="/images/logo.png" alt="Logo of bangwan shape like a house" id="logo-image">
+            <div>
+                <header id="header1">บ้านคุรอด</header>
+                <header id="header2">จังหวัดพังงา</header>
+            </div>
+            <div class="menubutton-container">
+                <a href="/index.html" id="navbutton">หน้าหลัก</a> 
+                <label id="navbutton">ที่พัก</label>
+                <a href="travel.html" id="navbutton">ที่เทียว</a>
+                <a href="/information/information.html" id="navbutton">ประวัติ</a>
+            </div>
+        </div>    
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="ค้นหาสถานที่พัก">
+        
+    </div>
+
+    <div id="itemList">
+        <!-- Example items -->
+        <div class="content-grid-item" data-name="บางครั่งโฮมสเตย์" data-description="้home stay bangklang">
+            <strong class="content-grid-item-header">บางครั่งโฮมสเตย์</strong>
+            <div class="content-grid-img-container">
+                <img src="/images/homestay.png" alt="image of home stay" class="grid-image">
+            </div>
+            <p class="grid-item-text">หากคุณมาเที่ยวพังงาแล้วอยากได้ที่พักนอนสบายๆ
+                พร้อมกับบรรยากาศริมป่าชายเลนสวยๆ แล้วละก็
+                ที่นี้จะเป็นคำตอบให้กับคุณแน่นอน และนอกจากที่พัก
+                จะดีแล้ว คุณยังสามารถบอกพนักงานที่พัก ให้พาไป
+                รับประทานอาหารในร้านที่ลับมากๆ ในป่าชายเลน
+                โดยคุณจะได้นั่งเรือชมบรรยากาศ และไปยังร้านอาหาร
+                ที่อยู่บนแพ โดยที่ร้านจะมีของเด็ดอย่าง “ปูนิ่ม”
+                ในราคาที่จับต้องได้ และมีปลาทะเลสดๆ ที่มาจากทะเล
+                ทุกๆวัน หากคุณได้ได้สัมผัสกับประสบการณ์ที่กล่าวมา
+                ขอเชิญให้ท่านมาพักผ่อนกายและใจที่นี้ได้เลย</p>
+        </div>
+    </div>
+<script src="places-script.js"></script>
+</body>
+</html>

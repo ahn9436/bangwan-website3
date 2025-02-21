@@ -1,0 +1,84 @@
+@import url(/basestructure.css);
+
+/* testing element  */
+body {
+    font-family: "IBM Plex Sans Thai", serif;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 20px 0;
+}
+
+#searchBar {
+    position: fixed;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#itemList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    margin: 60px 10% 0 10%;
+}
+
+.content-grid-item {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease;
+}
+
+.content-grid-img-container {
+    width: 100%;
+    height: 325px;
+    overflow: hidden;
+}
+
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-grid-item-header {
+    display: block;
+    margin: 10px;
+    font-size: 19px;
+    justify-self: center;
+    color: #333;
+}
+
+.grid-item-text {
+    margin: 15px;
+    font-size: 15px;
+    color: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    background-color: rgb(219, 208, 165);
+    font-weight: 600;
+    color: black;
+}
+
+@media (max-width: 1369px) {
+    .search-container {
+        margin: 120px 0 20px 0;
+    }
+}
+
+@media (max-width: 750px) {
+    #itemList {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        margin: 60px 5% 0 5%;
+    }
+}
