@@ -12,7 +12,7 @@ body {
 }
 
 #searchBar {
-    position: fixed;
+    position: block;
     width: 80%;
     padding: 10px;
     font-size: 16px;
@@ -70,7 +70,7 @@ body {
     color: black;
 }
 
-@media (max-width: 1369px) {
+@media (max-width: 1200px) {
     .search-container {
         margin: 120px 0 20px 0;
     }

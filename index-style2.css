@@ -431,7 +431,7 @@ footer.footer {
 
 /* Tablet Responsive Design */
 
-@media (max-width: 1369px) {
+@media (max-width: 1200px) {
     .footer-container {
         flex-direction: column;
         align-items: center;

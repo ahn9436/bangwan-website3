@@ -139,7 +139,7 @@ a {
 
 /* Tablet Responsive Design */
 
-@media (max-width: 1369px) {
+@media (max-width: 1200px) {
     .top-menu {
         height: 70px;
     }
