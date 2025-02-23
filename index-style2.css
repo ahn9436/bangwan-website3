@@ -329,8 +329,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    width: 92%;
-    max-width: 1500px;
+    width: 100%;
+    max-width: 1850px;
+}
+
+.video-container video {
+    max-height: 275px;
+    min-width: 100%;
 }
 
 .video-card {
@@ -338,7 +343,7 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    min-height: 275px;
+    min-height: 280px;
 }
 
 .thumbnail {
