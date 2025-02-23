@@ -323,19 +323,25 @@
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+    animation: smoothscroll 1.2s ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
 }
 
 .thumbnail-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    width: 100%;
-    max-width: 1850px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 350px;
+    gap: 50px;
+    width: 75%;
+    max-width: 1700px;
 }
 
 .video-container video {
-    max-height: 275px;
-    min-width: 100%;
+    max-height: 100%;
 }
 
 .video-card {
@@ -353,23 +359,54 @@
 
 .video-container {
     display: none;
+    height: 100%;
+    justify-content: center;
 }
 
 .load-more {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background: #ff0000;
+    margin: 45px 0 30px 0;
+    padding: 17px 33px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    background: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid black;
 }
 
 .load-more:hover {
-    background: #cc0000;
+    scale: 1.05;
+    background-color: rgb(158, 158, 158);
 }
 
+#video-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#video-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#video-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@keyframes smoothscroll {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
 
 /* Popup Modal */
 .modal {
@@ -536,7 +573,8 @@ footer.footer {
     }
 
     .thumbnail-container {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
     }
 }
 
@@ -618,5 +656,30 @@ footer.footer {
         padding-inline: 1.25rem;
         margin: 65px auto 0 auto;
         font-size: 14px;
+    }
+
+    .thumbnail-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 320px;
+    }
+
+    .video-container video {
+        max-width: 100%;
+    }
+
+    #video-1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    #video-2 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    
+    #video-3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 }

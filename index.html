@@ -117,29 +117,29 @@
         
         <div class="thumbnail-container" id="videoContainer">
             <!-- Initial Videos -->
-            <div class="video-card" onclick="loadVideo(this, 'video1.mp4')">
-                <img src="thumbnail1.jpg" alt="Thumbnail" class="thumbnail">
+            <div class="video-card" onclick="loadVideo(this, 'video1.mp4')" id="video-1">
+                <img src="/images/insta-vid1.jpg" alt="Thumbnail" class="thumbnail">
                 <div class="video-container">
                     <video controls src="/images/Index-background.mp4"></video>
                 </div>
             </div>
     
-            <div class="video-card" onclick="loadVideo(this, 'video2.mp4')">
-                <img src="thumbnail2.jpg" alt="Thumbnail" class="thumbnail">
+            <div class="video-card" onclick="loadVideo(this, 'video2.mp4')" id="video-2">
+                <img src="/images/insta-vid2.jpg" alt="Thumbnail" class="thumbnail">
                 <div class="video-container">
                     <video controls src="/images/insta-vid-1.mp4"></video>
                 </div>
             </div>
     
-            <div class="video-card" onclick="loadVideo(this, 'video3.mp4')">
-                <img src="thumbnail3.jpg" alt="Thumbnail" class="thumbnail">
+            <div class="video-card" onclick="loadVideo(this, 'video3.mp4')" id="video-3">
+                <img src="/images/insta-vid3.jpg" alt="Thumbnail" class="thumbnail">
                 <div class="video-container">
                     <video controls src="images/insta-vid-2.mp4"></video>
                 </div>
             </div>
         </div>
     
-        <button class="load-more" onclick="loadMoreVideos()">โหลดเพิ่ม</button>    
+        <button class="load-more" onclick="loadMoreVideos()">โหลดวีดีโอเพิ่ม</button>    
         </div>
     
 
@@ -257,7 +257,7 @@
             }
 
             card.querySelector('.thumbnail').style.display = 'none'; // Hide thumbnail
-            videoContainer.style.display = 'block'; // Show video
+            videoContainer.style.display = 'flex'; // Show video
             videoElement.play(); // Auto-play video
         }
 
