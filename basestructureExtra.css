@@ -218,6 +218,10 @@ strong {
         margin-top: 8px;
     }
 
+    .thumbnail-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 /* Animation Zone */

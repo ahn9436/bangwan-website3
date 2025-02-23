@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Downloading Menu Zone -->
-    <div class="downloadElement">
+    <!-- <div class="downloadElement">
         <img src="images/logo.png" alt="Logo of bangwan shape like a house" class="logo-imageLoader">
         <span style="font-size: 22; font-weight: 550;">บ้านคุรอด</span>
         <div class="blockingBlock">
@@ -23,7 +23,7 @@
             <div class="block"></div>
             <div class="block"></div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Top menu -->
     <nav>
@@ -75,8 +75,8 @@
             <div class="carousel-item" id="carousel-item1">
                 <strong class="carousel-text">น้ำตกตำหนัง</strong>
                 <label class="carousel-label">เป็นน้ำตกขนาดใหญ่ที่ตั้งอยู่ภายในอุทยานแห่งชาติศรีพังงา </label>
-                <a href="destination/waterfall.html" class="carousel-button-container">
-                    <button class="carousel-button">
+                <div>
+                    <a href="destination/waterfall.html" class="carousel-button">
                         อ่านเพิ่มเติม
                         <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
                           <path
@@ -85,14 +85,14 @@
                             fill-rule="evenodd"
                           ></path>
                         </svg>
-                    </button>
-                </a>
+                    </a>
+                </div>
             </div>
             <div class="carousel-item" id="carousel-item2">
                 <strong class="carousel-text">เที่ยวทะเลพังงา</strong>
                 <label class="carousel-label">ดำน้ำชมปาการังและนั่งเรือผ่านป่าชายเลนขนาดใหญ่</label>
-                <a href="destination/sea.html" class="carousel-button-container">
-                    <button class="carousel-button">
+                <div>
+                    <a href="destination/sea.html" class="carousel-button">
                         อ่านเพิ่มเติม
                         <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
                           <path
@@ -101,8 +101,8 @@
                             fill-rule="evenodd"
                           ></path>
                         </svg>
-                    </button>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
         <button class="arrow prev">&#10094;</button>
@@ -112,6 +112,36 @@
     <div class="traveltext-container">
         <strong class="traveltext">วีดีโอ</strong>
     </div>
+
+    <div class="video-card-container">
+        
+        <div class="thumbnail-container" id="videoContainer">
+            <!-- Initial Videos -->
+            <div class="video-card" onclick="loadVideo(this, 'video1.mp4')">
+                <img src="thumbnail1.jpg" alt="Thumbnail" class="thumbnail">
+                <div class="video-container">
+                    <video controls src="/images/Index-background.mp4"></video>
+                </div>
+            </div>
+    
+            <div class="video-card" onclick="loadVideo(this, 'video2.mp4')">
+                <img src="thumbnail2.jpg" alt="Thumbnail" class="thumbnail">
+                <div class="video-container">
+                    <video controls src="/images/insta-vid-1.mp4"></video>
+                </div>
+            </div>
+    
+            <div class="video-card" onclick="loadVideo(this, 'video3.mp4')">
+                <img src="thumbnail3.jpg" alt="Thumbnail" class="thumbnail">
+                <div class="video-container">
+                    <video controls src="images/insta-vid-2.mp4"></video>
+                </div>
+            </div>
+        </div>
+    
+        <button class="load-more" onclick="loadMoreVideos()">โหลดเพิ่ม</button>    
+        </div>
+    
 
     <!-- Modal -->
     <div class="modal" id="modal">
@@ -215,6 +245,48 @@
             modal.style.display = 'none';
         }
     });
+
+    //Videos load zone
+
+    function loadVideo(card, videoSrc) {
+            let videoContainer = card.querySelector('.video-container');
+            let videoElement = videoContainer.querySelector('video');
+
+            if (!videoElement.src) {
+                videoElement.src = videoSrc; // Load the video on click
+            }
+
+            card.querySelector('.thumbnail').style.display = 'none'; // Hide thumbnail
+            videoContainer.style.display = 'block'; // Show video
+            videoElement.play(); // Auto-play video
+        }
+
+        let extraVideos = [
+            { src: 'video4.mp4', thumbnail: 'thumbnail4.jpg'},
+            { src: 'video5.mp4', thumbnail: 'thumbnail5.jpg'},
+            { src: 'video6.mp4', thumbnail: 'thumbnail6.jpg'},
+        ];
+
+        function loadMoreVideos() {
+            let container = document.getElementById('videoContainer');
+
+            extraVideos.forEach(video => {
+                let videoCard = document.createElement('div');
+                videoCard.classList.add('video-card');
+                videoCard.setAttribute('onclick', `loadVideo(this, '${video.src}')`);
+
+                videoCard.innerHTML = `
+                    <img src="${video.thumbnail}" alt="Thumbnail" class="thumbnail">
+                    <div class="video-container">
+                        <video controls></video>
+                    </div>
+                `;
+
+                container.appendChild(videoCard);
+            });
+
+            document.querySelector('.load-more').style.display = 'none'; // Hide the button after loading more videos
+        }
 </script>
 </body>
 </html>

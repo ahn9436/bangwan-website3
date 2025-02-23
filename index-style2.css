@@ -165,7 +165,7 @@
     display: block;
     position: relative;
     height: 16%;
-    width: 50vw;
+    width: 60vw;
     font-size: 3.5rem;
     font-weight: 400;   
     color: white;
@@ -181,17 +181,13 @@
     margin: 0 0 0 8%;   
 }
 
-.carousel-button-container {
-    display: relative;
-}
-
 .carousel-button {
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     padding-block: 1rem;
     padding-inline: 1.75rem;
     background-color: transparent;
-    border-radius: 8000px;
+    border-radius: 100px;
     display: flex;
     justify-self: flex-end;
     cursor: pointer;
@@ -316,6 +312,57 @@
 
 .dot.active {
     background-color: black;
+}
+
+.video-card-container {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 92%;
+    max-width: 1500px;
+}
+
+.video-card {
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    min-height: 275px;
+}
+
+.thumbnail {
+    width: 100%;
+    display: block;
+}
+
+.video-container {
+    display: none;
+}
+
+.load-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.load-more:hover {
+    background: #cc0000;
 }
 
 
@@ -477,9 +524,14 @@ footer.footer {
     }
 
     .carousel-button {
+        width: 120px;
         padding-block: 0.8rem;
         padding-inline: 1.50rem;
         margin: 14% auto 0 auto;
+    }
+
+    .thumbnail-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -559,7 +611,7 @@ footer.footer {
     .carousel-button {
         padding-block: 0.5rem;
         padding-inline: 1.25rem;
-        margin: 30% auto 0 auto;
+        margin: 65px auto 0 auto;
         font-size: 14px;
     }
 }
