@@ -1,0 +1,198 @@
+@import url(/basestructure.css);
+
+strong {
+    font-weight: lighter;
+    color: black;
+    font-size: larger;
+}
+
+/* Customizing top image here */
+#top-image { 
+    width: inherit;
+    height: 100;
+}
+
+.information-image-placeholder {
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    justify-content: end;
+    background-color: aqua;
+    width: 60vw;
+    height: 250px;
+    z-index: 1;
+}
+
+.information-text-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 35px 0 0;
+    position: absolute;
+    gap: 8px;
+}
+
+#headerStrong1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#headerStrong2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* content grid zone */
+
+/* adjustable size for grid container */
+.gridsize-container {
+    width: 60vw;
+    height: max-content;
+    margin: 15px auto;
+}
+
+.contentgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 370px);     /* this can be use auto instead for better optimization */
+    gap: 20px;
+}
+
+
+.grid-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+#leader-image, #villager-image {
+    display: flex;
+    width: auto;
+    height: 100%;
+    min-height: 420px;
+    animation: fadeIn 2.5s;
+}
+
+.grid-header {
+    font-size: 1.3rem;
+    font-weight: 500;
+    align-self: start;
+
+    animation: fadeInLeft 2s;
+}
+
+.grid-paragraph {
+    font-size: 0.9rem;
+    font-weight: 400;
+    animation: fadeInLeft 2.2s;
+}
+
+
+/* Tablet Responsive Design */
+
+@media (max-width: 1369px) {
+    .information-image-placeholder {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .gridsize-container {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .grid-content {
+        padding: 15px 20px;
+        margin-top: 20px;
+    }
+
+    #villager-image {
+        margin-left: 25px;
+    }
+
+    .grid-header, .grid-paragraph {
+        margin: 0 0 0 20px;
+    }
+
+    .grid-header {
+        font-size: 1.3rem;
+    }
+    
+    .grid-paragraph {
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .information-image-placeholder {
+        height: 200px;
+        padding: 65px 0 0 0;
+    }
+
+    #headerStrong1 {
+        font-size: 1.3rem;
+    }
+    
+    #headerStrong2 {
+        font-size: 0.9rem;
+    }
+
+    .contentgrid {
+        grid-template-rows: repeat(2, 270px);     /* this can be use auto instead for better optimization */
+        gap: 2px;
+    }
+
+    .grid-content {
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+
+    #leader-image, #villager-image {
+        min-height: 250px;
+    }
+
+    .grid-header {
+        font-size: 0.8rem;
+    }
+    
+    .grid-paragraph {
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+}
+
+/* Animation Zone */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-200px, 0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate(200px, 0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

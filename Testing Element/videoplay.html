@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized Video Grid with Load More</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .video-card-container {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .thumbnail-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .video-card {
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .thumbnail {
+            width: 100%;
+            display: block;
+        }
+
+        .video-container {
+            display: none;
+        }
+
+        .video-info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .load-more {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #ff0000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .load-more:hover {
+            background: #cc0000;
+        }
+
+        /* Responsive for tablets */
+        @media (max-width: 1200px) {
+            .thumbnail-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 750px) {
+            .thumbnail-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-card-container">
+        
+    <div class="thumbnail-container" id="videoContainer">
+        <!-- Initial Videos -->
+        <div class="video-card" onclick="loadVideo(this, 'video1.mp4')">
+            <img src="thumbnail1.jpg" alt="Thumbnail" class="thumbnail">
+            <div class="video-container">
+                <video controls></video>
+            </div>
+            <div class="video-info">❤️ 149K 💬 248</div>
+        </div>
+
+        <div class="video-card" onclick="loadVideo(this, 'video2.mp4')">
+            <img src="thumbnail2.jpg" alt="Thumbnail" class="thumbnail">
+            <div class="video-container">
+                <video controls></video>
+            </div>
+            <div class="video-info">❤️ 87K 💬 369</div>
+        </div>
+
+        <div class="video-card" onclick="loadVideo(this, 'video3.mp4')">
+            <img src="thumbnail3.jpg" alt="Thumbnail" class="thumbnail">
+            <div class="video-container">
+                <video controls></video>
+            </div>
+            <div class="video-info">❤️ 375K 💬 585</div>
+        </div>
+    </div>
+
+    <button class="load-more" onclick="loadMoreVideos()">Load More</button>
+
+    </div>
+
+    <script>
+        function loadVideo(card, videoSrc) {
+            let videoContainer = card.querySelector('.video-container');
+            let videoElement = videoContainer.querySelector('video');
+
+            if (!videoElement.src) {
+                videoElement.src = videoSrc; // Load the video on click
+            }
+
+            card.querySelector('.thumbnail').style.display = 'none'; // Hide thumbnail
+            videoContainer.style.display = 'block'; // Show video
+            videoElement.play(); // Auto-play video
+        }
+
+        let extraVideos = [
+            { src: 'video4.mp4', thumbnail: 'thumbnail4.jpg', likes: '95K', comments: '320' },
+            { src: 'video5.mp4', thumbnail: 'thumbnail5.jpg', likes: '210K', comments: '410' },
+            { src: 'video6.mp4', thumbnail: 'thumbnail6.jpg', likes: '78K', comments: '215' },
+        ];
+
+        function loadMoreVideos() {
+            let container = document.getElementById('videoContainer');
+
+            extraVideos.forEach(video => {
+                let videoCard = document.createElement('div');
+                videoCard.classList.add('video-card');
+                videoCard.setAttribute('onclick', `loadVideo(this, '${video.src}')`);
+
+                videoCard.innerHTML = `
+                    <img src="${video.thumbnail}" alt="Thumbnail" class="thumbnail">
+                    <div class="video-container">
+                        <video controls></video>
+                    </div>
+                    <div class="video-info">❤️ ${video.likes} 💬 ${video.comments}</div>
+                `;
+
+                container.appendChild(videoCard);
+            });
+
+            document.querySelector('.load-more').style.display = 'none'; // Hide the button after loading more videos
+        }
+    </script>
+
+</body>
+</html>
