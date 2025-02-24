@@ -154,11 +154,11 @@
 }
 
 #carousel-item1 {
-    background-image: url(images/top-waterfall.jpg);
+    background-image: url(/images/top-waterfall.jpg);
 }
 
 #carousel-item2 {
-    background-image: url(images/sea-Index.png);
+    background-image: url(/images/sea-Index.png);
 }
 
 .carousel-text {
@@ -328,8 +328,7 @@
     transform: translateY(40px) scale(0.8);
     animation: smoothscroll 1.2s ease-in forwards;
     animation-timeline: view();
-    animation-range: entry 0% cover 15%;
-}
+    animation-range: entry 0% cover 25%}
 
 .thumbnail-container {
     display: grid;

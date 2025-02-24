@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Structure</title>
+
+    <style>
+        body {
+          transition: opacity 0.5s ease-in-out;
+        }
+      
+        .fade-out {
+          opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a basic HTML structure.</p>
+    <a href="nextpage.html" id="myLink">Click Me</a>
+
+<script>
+  document.getElementById("myLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent immediate navigation
+
+    document.body.classList.add("fade-out"); // Start fade-out animation
+
+    setTimeout(() => {
+      window.location.href = this.href; // Navigate after animation
+    }, 1500); // Delay matches the transition duration (0.5s)
+  });
+</script>
+</body>
+</html>

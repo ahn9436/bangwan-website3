@@ -2,291 +2,148 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Bangwan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index-style2.css">
+    <title>Bankurod</title>
 
-    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Downloading Menu Zone -->
-    <!-- <div class="downloadElement">
-        <img src="images/logo.png" alt="Logo of bangwan shape like a house" class="logo-imageLoader">
-        <span style="font-size: 22; font-weight: 550;">บ้านคุรอด</span>
-        <div class="blockingBlock">
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-        </div>
-    </div> -->
 
-    <!-- Top menu -->
-    <nav>
-        <div class="top-menu">
-            <img src="images/logo.png" alt="Logo of bangwan shape like a house" id="logo-image">
-            <div>
-                <header id="header1">บ้านคุรอด</header>
-                <header id="header2">จังหวัดพังงา</header>
-            </div>
-            <div class="menubutton-container">
-                <label id="navbutton">หน้าหลัก</label> 
-                <a href="places/hotel.html" id="navbutton">ที่พัก</a>
-                <a href="places/travel.html" id="navbutton">ที่เที่ยว</a>
-                <a href="information/information.html" id="navbutton">ประวัติ</a>
-            </div>
-        </div>    
-    </nav>
-    <div class="backgrond-container">
-        <!-- background -->
-        <div class="top-image">
-            <video alt="video showcase bangwan atmosphere" autoplay muted loop playsinline>
-                <source src="images/Index-background.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="background-text-container">
-            <label for="" id="welcome-text">ยินดีต้อนรับ</label>
-            <label for="" id="bangwan-text">บ้านคุรอด จังหวัดพังงา</label>
-            <label for="" id="experience-text">เราพร้อมจะสร้างประสบการณ์ท่องเที่ยวที่ดีที่สุดให้กับคุณ</label>
-        </div>
-    </div>
-
-    <div class="vdotext-container">
-            <strong class="Vdotext">แนะนำ</strong>
-    </div>
-
-    <!-- Carousel -->
-    <div class="dots">
-        <div style="display: inline-block">
-            <label class="dot-text" for="dot2">น้ำตกตำหนัง</label>
-            <button class="dot active" id="dot2"></buttonS>
-        </div>
-        <div style="display: inline-block;">
-            <label class="dot-text" for="dot">เที่ยวทะเลพังงา</label>
-            <button class="dot" id="dot"></div>
-        </div>
-    </div>
-    <div class="carousel">
-        <div class="carousel-items">
-            <div class="carousel-item" id="carousel-item1">
-                <strong class="carousel-text">น้ำตกตำหนัง</strong>
-                <label class="carousel-label">เป็นน้ำตกขนาดใหญ่ที่ตั้งอยู่ภายในอุทยานแห่งชาติศรีพังงา </label>
-                <div>
-                    <a href="destination/waterfall.html" class="carousel-button">
-                        อ่านเพิ่มเติม
-                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                          <path
-                            clip-rule="evenodd"
-                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                            fill-rule="evenodd"
-                          ></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="carousel-item" id="carousel-item2">
-                <strong class="carousel-text">เที่ยวทะเลพังงา</strong>
-                <label class="carousel-label">ดำน้ำชมปาการังและนั่งเรือผ่านป่าชายเลนขนาดใหญ่</label>
-                <div>
-                    <a href="destination/sea.html" class="carousel-button">
-                        อ่านเพิ่มเติม
-                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                          <path
-                            clip-rule="evenodd"
-                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                            fill-rule="evenodd"
-                          ></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <button class="arrow prev">&#10094;</button>
-        <button class="arrow next">&#10095;</button>
-    </div>
-
-    <div class="traveltext-container">
-        <strong class="traveltext">วีดีโอ</strong>
-    </div>
-
-    <div class="video-card-container">
-        
-        <div class="thumbnail-container" id="videoContainer">
-            <!-- Initial Videos -->
-            <div class="video-card" onclick="loadVideo(this, 'video1.mp4')" id="video-1">
-                <img src="/images/insta-vid1.jpg" alt="Thumbnail" class="thumbnail">
-                <div class="video-container">
-                    <video controls src="/images/Index-background.mp4"></video>
-                </div>
-            </div>
-    
-            <div class="video-card" onclick="loadVideo(this, 'video2.mp4')" id="video-2">
-                <img src="/images/insta-vid2.jpg" alt="Thumbnail" class="thumbnail">
-                <div class="video-container">
-                    <video controls src="/images/insta-vid-1.mp4"></video>
-                </div>
-            </div>
-    
-            <div class="video-card" onclick="loadVideo(this, 'video3.mp4')" id="video-3">
-                <img src="/images/insta-vid3.jpg" alt="Thumbnail" class="thumbnail">
-                <div class="video-container">
-                    <video controls src="images/insta-vid-2.mp4"></video>
-                </div>
-            </div>
-        </div>
-    
-        <button class="load-more" onclick="loadMoreVideos()">โหลดวีดีโอเพิ่ม</button>    
-        </div>
-    
-
-    <!-- Modal -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close" id="close">&times;</span>
-            <img id="modal-img" src="" alt="">
-            <p id="modal-description"></p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Left Side: Contact Info -->
-            <div class="footer-left">
-                <h3>ติดต่อเราได้ที่</h3>
-                <p><strong>เบอร์โทรศัพท์ :</strong> 02-123-4567</p>
-                <p><strong>เบอร์โทรศัพท์ :</strong> 08-999-999</p><br>
-                <p><strong>Line:</strong> abcdefg</p>
-            </div>
-
-            <!-- Right Side: Social Media Links -->
-            <div class="footer-right">
-                <h3>ติดตามเราได้ที่</h3>
-                <div class="social-media">
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/profile.php?id=61572966750831">
-                        <div class="social-media-item">
-                            <img src="images/contact-logo.jpg" alt="Facebook">
-                            <span>Facebook</span>
-                        </div>
-                    </a>
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/bankurodd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                        <div class="social-media-item">
-                            <img src="images/contact-logo.jpg" alt="Instagram">
-                            <span>Instagram</span>
-                        </div>
-                    </a>
-                    <!-- TikTok -->
-                    <a href="https://www.tiktok.com/@bankurod?is_from_webapp=1&sender_device=pc">
-                        <div class="social-media-item">
-                            <img src="images/contact-logo.jpg" alt="Tiktok">
-                            <span>TikTok</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-<!-- JavaScript -->
-<script>
-    // Carousel Logic
-    const carouselItems = document.querySelector('.carousel-items');
-    const carouselDots = document.querySelectorAll('.dot');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    let currentIndex = 0;
-
-
-    function updateCarousel() {
-        carouselItems.style.transform = `translateX(-${currentIndex * 100}%)`;
-        carouselDots.forEach(dot => dot.classList.remove('active'));
-        carouselDots[currentIndex].classList.add('active');
-    }
-
-    function showNext() {
-        currentIndex = (currentIndex + 1) % carouselDots.length;
-        updateCarousel();
-    }
-
-    function showPrev() {
-        currentIndex = (currentIndex - 1 + carouselDots.length) % carouselDots.length;
-        updateCarousel();
-    }
-
-    nextButton.addEventListener('click', showNext);
-    prevButton.addEventListener('click', showPrev);
-
-    carouselDots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentIndex = index;
-            updateCarousel();
-        });
-    });
-
-
-    // Modal Logic
-    const modal = document.getElementById('modal');
-    const modalImg = document.getElementById('modal-img');
-    const modalDescription = document.getElementById('modal-description');
-    const contentImages = document.querySelectorAll('.content-item img');
-    const close = document.getElementById('close');
-
-    close.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', event => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
+    <style>
+        body, html {
+            font-family: "IBM Plex Sans Thai",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+            height: 100vh;
+            width: 100vw;
         }
-    });
 
-    //Videos load zone
+        strong {
+            display: block;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+        }
 
-    function loadVideo(card, videoSrc) {
-            let videoContainer = card.querySelector('.video-container');
-            let videoElement = videoContainer.querySelector('video');
+        .language-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 35%;
+            height: 37%;
+            gap: 10px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/waterFall1.png');
+            border: 8px double white;
+            border-radius: 10px;
+        }
 
-            if (!videoElement.src) {
-                videoElement.src = videoSrc; // Load the video on click
+        .language-btn-container {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            margin: 0 10px;
+            font-size: 17px;
+            font-weight: 700;            
+            width: 80px;
+            color: white;
+            border: 3px solid white;
+            cursor: pointer;
+            position: relative;
+            background-color: transparent;
+            text-decoration: none;
+            overflow: hidden;
+            z-index: 1;
+            font-family: inherit;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(203, 203, 203);
+            transform: translateX(-100%);
+            transition: all .3s;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            transform: translateX(0);
+        }
+
+        #animation-test {
+            position: absolute;
+            background-color: rgb(235, 221, 221);
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            opacity: 1;
+            z-index: 8000;
+        }
+
+        @keyframes appear {
+            0% {
+                transform: translateX(-1800px);
             }
 
-            card.querySelector('.thumbnail').style.display = 'none'; // Hide thumbnail
-            videoContainer.style.display = 'flex'; // Show video
-            videoElement.play(); // Auto-play video
+            100% {
+                transform: translateX(0);
+            }
         }
+    </style>
+</head>
+<body>
+    <div class="language-container">
+        <strong>โปรดเลือกภาษา</strong>
+        <strong>Please select a language</strong>
+        <div class="language-btn-container">
+            <a href="/TH/bankurodd.html" class="btn" id="link">ไทย</a>
+            <a href="/EN/bankurodd.html" class="btn" id="link2">English</a>
+        </div>
+    </div>
 
-        let extraVideos = [
-            { src: 'video4.mp4', thumbnail: 'thumbnail4.jpg'},
-            { src: 'video5.mp4', thumbnail: 'thumbnail5.jpg'},
-            { src: 'video6.mp4', thumbnail: 'thumbnail6.jpg'},
-        ];
+    <div id="animation-test"></div>
+    
 
-        function loadMoreVideos() {
-            let container = document.getElementById('videoContainer');
+    <script>
+    document.getElementById("link").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent immediate navigation
 
-            extraVideos.forEach(video => {
-                let videoCard = document.createElement('div');
-                videoCard.classList.add('video-card');
-                videoCard.setAttribute('onclick', `loadVideo(this, '${video.src}')`);
+    document.body.classList.add("fade-out"); // Start fade-out animation
+    document.getElementById("animation-test").style.display = "block"
+    document.getElementById("animation-test").style.animation = "appear 1s ease-in-out"
 
-                videoCard.innerHTML = `
-                    <img src="${video.thumbnail}" alt="Thumbnail" class="thumbnail">
-                    <div class="video-container">
-                        <video controls></video>
-                    </div>
-                `;
+    setTimeout(() => {
+      window.location.href = this.href; // Navigate after animation
+    }, 2000); // Delay matches the transition duration (1.5s)
+  });
 
-                container.appendChild(videoCard);
-            });
 
-            document.querySelector('.load-more').style.display = 'none'; // Hide the button after loading more videos
-        }
-</script>
+
+    document.getElementById("link2").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent immediate navigation
+
+    document.body.classList.add("fade-out"); // Start fade-out animation
+    document.getElementById("animation-test").style.display = "block"
+    document.getElementById("animation-test").style.animation = "appear 1s ease-in-out"
+
+    setTimeout(() => {
+      window.location.href = this.href; // Navigate after animation
+    }, 2000); // Delay matches the transition duration (1.5s)
+  });
+    </script>
 </body>
 </html>
