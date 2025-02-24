@@ -65,8 +65,8 @@ a {
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    height: 100vh;
-    width: 100vw;
+    height: 100svh;
+    width: 100svw;
     position: fixed;
     background-color: rgb(235, 221, 221);
     animation: faded-away 0.7s ease-out;
