@@ -102,6 +102,7 @@ strong {
     width: 25px;
     height: 25px;
     background-color: black;
+    animation-fill-mode: forwards;
     opacity: 0;
 }
 
