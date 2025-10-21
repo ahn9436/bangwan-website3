@@ -1,69 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://kurodvillage.netlify.app/</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/th/bankurodd</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/en/bankurodd</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/th/hotel</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/th/travel</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/th/information</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/th/destination/waterfall</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/th/destination/sea</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/en/hotel</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/en/travel</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/en/information</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/en/destination/waterfall</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://kurodvillage.netlify.app/en/destination/sea</loc>
-<lastmod>2025-10-21T11:42:20+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+     <loc>https://kurodvillage.netlify.app</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>1</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/EN/bankurodd</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.9</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/TH/bankurodd</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.9</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/EN/hotel</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+      <url>
+     <loc>https://kurodvillage.netlify.app/TH/hotel</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/EN/travel</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/TH/travel</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/EN/information</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/TH/information</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/EN/destination/waterfall</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/TH/destination/waterfall</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/EN/destination/sea</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+   <url>
+     <loc>https://kurodvillage.netlify.app/TH/destination/sea</loc>
+     <lastmod>2025-10-21</lastmod>
+     <priority>0.80</priority>
+   </url>
+</urlset>   
